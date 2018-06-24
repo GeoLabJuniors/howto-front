@@ -1,3 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,6 +57,14 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
 @font-face {
   font-family: 'arial_geo';
   src: url("../fonts/arial_geo.ttf");
@@ -71,4 +88,298 @@ table {
 @font-face {
   font-family: 'MyriadPro-Regular';
   src: url("../fonts/MyriadPro-Regular.otf");
+}
+header.mainHeader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 105px;
+  background: #fff;
+  z-index: 10;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 105px;
+}
+
+.flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a.brandName {
+  font-family: "Roboto-Regular_1";
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  color: #00B5E1;
+}
+
+nav.headerNav {
+  width: 490px;
+}
+
+a.headerNav-a, .loginBox p {
+  font-family: "NotoSerifGeorgian";
+  font-size: 18px;
+  color: #292929;
+}
+
+a.active {
+  color: #CCCCCC;
+}
+
+.searchProfile {
+  width: 164px;
+}
+
+.searchBox img {
+  display: block;
+  cursor: pointer;
+}
+
+img.hiddenCloseImg {
+  display: none;
+}
+
+.closeImg {
+  width: 22px;
+  height: 22px;
+}
+
+form.hiddensearchBox {
+  position: absolute;
+  right: 30px;
+  top: 106px;
+  display: block;
+  width: 230px;
+  height: 45px;
+}
+
+form.hiddensearchBox.hiddenForm {
+  display: none;
+}
+
+form.hiddensearchBox input {
+  width: 230px;
+  height: 45px;
+  border: none;
+  background: #fff;
+  padding: 0 5px;
+}
+
+button#hiddenBtn {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: initial;
+  border: initial;
+  border-width: initial;
+  border-style: initial;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+button#hiddenBtn img {
+  width: 27px;
+  height: 19px;
+}
+
+.loginBox p {
+  color: #00B5E1;
+  cursor: pointer;
+}
+
+html, body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.jssorSliderWrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#jssor_1 {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 960px;
+  height: 640px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.jssorl-009-spin img {
+  margin-top: -19px;
+  position: relative;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+  -webkit-animation-name: jssorl-009-spin;
+          animation-name: jssorl-009-spin;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes jssorl-009-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes jssorl-009-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.jssorImgWrapper {
+  cursor: default;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 960px;
+  height: 640px;
+  overflow: hidden;
+}
+
+.jssorTitleText {
+  position: absolute;
+  top: 195px;
+  left: 330px;
+  width: 300px;
+  height: 250px;
+  background-color: rgba(255, 188, 5, 0.8);
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.88;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*jssor slider bullet skin 064 css*/
+.jssorb064 {
+  position: absolute;
+}
+
+.jssorb064 .i {
+  position: absolute;
+  cursor: pointer;
+}
+
+.jssorb064 .i .b {
+  fill: #000;
+  fill-opacity: .5;
+  stroke: #fff;
+  stroke-width: 400;
+  stroke-miterlimit: 10;
+  stroke-opacity: 0.5;
+}
+
+.jssorb064 .i:hover .b {
+  fill-opacity: .8;
+}
+
+.jssorb064 .iav .b {
+  fill: #ffe200;
+  fill-opacity: 1;
+  stroke: #ffaa00;
+  stroke-opacity: .7;
+  stroke-width: 2000;
+}
+
+.jssorb064 .iav:hover .b {
+  fill-opacity: .6;
+}
+
+.jssorb064 .i.idn {
+  opacity: .3;
+}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.jssora051 .a {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 360;
+  stroke-miterlimit: 10;
+}
+
+.jssora051:hover {
+  opacity: .8;
+}
+
+.jssora051.jssora051dn {
+  opacity: .5;
+}
+
+.jssora051.jssora051ds {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.categorySlider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 110px;
+  width: 100%;
+  background: red;
 }

@@ -1,18 +1,124 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to How-to | ?</title>
+    <title>How-to | Welcome</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/jssor.slider-27.1.0.min.js"></script>
+    <script src="js/JssorScript.js"></script>
 </head>
 <body>
+    <header class="mainHeader">
+        <div class="container flexBox">
+            <a href="index.html" class="brandName">howto</a>
+            <nav class="headerNav">
+                <ul class="headerNav-ul flexBox">
+                    <li><a href="#" class="headerNav-a active">პროექტის შესახებ</a></li>
+                    <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
+                    <li><a href="#" class="headerNav-a">explore</a></li>
+                </ul>
+            </nav>
+            <div class="searchProfile flexBox">
+                <div class="searchBox">
+                    <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
+                    <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
+                </div> <!--searchBox-->
+
+                <div class="loginBox">
+                    <p>შესვლა</p>
+                </div> <!--loginBox-->
+            </div> <!--searchProfile-->
+        </div> <!--container-->
+
+        <form class="hiddensearchBox hiddenForm">
+            <input type="text" name="">
+            <button id="hiddenBtn" title="Search">
+                <img src="img/search.png">
+            </button>
+            
+        </form> <!--hiddensearchBox-->
+    </header>
+
+
+
+    <div class="jssorSliderWrapper">
+                <div id="jssor_1">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin">
+                        <img src="img/spin.svg" />
+                    </div>
+
+                    <div data-u="slides" class="jssorImgWrapper">
+                        <div data-p="200.00">
+                            <img data-u="image" src="img/Artboard 1222-100.jpg" />
+                            <div class="jssorTitleText">Layout Settings <br /><br />
+                                Slider Size: 960 x 640<br /> 
+                                Scale To: Full Window (Flex Mode) <br />
+                                Max Width: 3000<br />
+                                Max Height: 3000<br />
+                                Bleeding: 100%
+                            </div>
+                        </div>
+
+                        <div data-p="200.00">
+                            <img data-u="image" src="img/Artboard 1-100.jpg" />
+                            <div class="jssorTitleText">Layout Settings <br /><br />
+                                Slider Size: 960 x 640<br /> 
+                                Scale To: Full Window (Flex Mode) <br />
+                                Max Width: 3000<br />
+                                Max Height: 3000<br />
+                                Bleeding: 100%
+                            </div>
+                        </div>
+                        
+                        <div data-p="200.00">
+                                <img data-u="image" src="img/001.jpg" />
+                                <div class="jssorTitleText">Layout Settings <br /><br />
+                                    Slider Size: 960 x 640<br /> 
+                                    Scale To: Full Window (Flex Mode) <br />
+                                    Max Width: 3000<br />
+                                    Max Height: 3000<br />
+                                    Bleeding: 100%
+                                </div>
+                            </div>
+                    </div> <!-- jssorImgWrapper-->
+
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb064" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+        <div class="categorySlider"></div>
+    </div> <!-- jssorSliderWrapper-->    
+    <!-- #endregion Jssor Slider End -->
+
+    <p style="height: 2000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam, facilis magnam consequatur unde vero nisi mollitia ipsam ratione inventore fuga amet, qui facere aut deleniti nostrum, excepturi aliquid omnis!</p>
     
 
 
 
 <script src="js/jQ.3.3.1.js"></script>
+<script type="text/javascript">jssor_1_slider_init();</script>
 <script src="js/scripts.js"></script>
+
 </body>
 </html>
