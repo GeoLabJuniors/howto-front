@@ -12,4 +12,29 @@ $(document).ready(function(){
         $('.hiddensearchBox').addClass('hiddenForm');
     });
 
+    // Owl carousel
+
+$('.owl-category').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay: false,
+    responsive:{
+        0:{
+            items:2
+        },
+        360:{
+            items:4
+        },
+        720:{
+            items:5
+        },
+        860:{
+            items:6
+        }
+    }
 });
+
+
+
+}); // .ready()
