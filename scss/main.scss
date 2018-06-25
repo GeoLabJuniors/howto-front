@@ -434,16 +434,6 @@ span.owl-play {
     height: 24px; 
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
 .catInfoWrapper {
     display: flex;
     justify-content: space-between;
@@ -478,4 +468,42 @@ span.owl-play {
     font-family: $roboto;
     font-size: 12px;
     color: $gray;
+}
+
+.lastAdded {
+    background: url(../img/bg.jpg) repeat;
+    padding: 40px 0 140px;
+}
+.whiteSpace {
+    height: 95px;
+    background: $white;
+}
+footer {
+    height: 125px;
+    background: $darkblue;
+}
+.footer-p {
+    height: 125px;
+    line-height: 125px;
+    text-align: center;
+}
+.footer-p > a {
+    font-family: $roboto;
+    font-size: 24px;
+    color: $white;
+    text-transform: capitalize;
+}
+.flexLeft {
+    display: flex;
+    align-items: center;
+}
+a.facebook {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+}
+.facebookIcon {
+    display: block;
+    width: 27px;
+    height: 27px;
 }

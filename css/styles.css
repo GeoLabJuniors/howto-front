@@ -715,3 +715,52 @@ span.owl-play {
   font-size: 12px;
   color: #BDBDBD;
 }
+
+.lastAdded {
+  background: url(../img/bg.jpg) repeat;
+  padding: 40px 0 140px;
+}
+
+.whiteSpace {
+  height: 95px;
+  background: #fff;
+}
+
+footer {
+  height: 125px;
+  background: #2C3D4E;
+}
+
+.footer-p {
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+}
+
+.footer-p > a {
+  font-family: "Roboto-Regular_1";
+  font-size: 24px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.flexLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a.facebook {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+
+.facebookIcon {
+  display: block;
+  width: 27px;
+  height: 27px;
+}
