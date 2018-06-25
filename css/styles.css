@@ -89,6 +89,55 @@ img {
   font-family: 'MyriadPro-Regular';
   src: url("../fonts/MyriadPro-Regular.otf");
 }
+.success-box {
+  margin: 50px 0;
+  padding: 10px 10px;
+  border: 1px solid #eee;
+  background: #f9f9f9;
+}
+
+.success-box img {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.success-box > div {
+  vertical-align: top;
+  display: inline-block;
+  color: #888;
+}
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+  list-style-type: none;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.rating-stars ul > li.star {
+  display: inline-block;
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size: 1em;
+  /* Change the size of the stars */
+  color: #fff;
+  /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color: #FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color: #FFCC36;
+}
+
 header.mainHeader {
   position: fixed;
   left: 0;
@@ -554,6 +603,7 @@ span.owl-play {
 }
 
 .ImgWrapper {
+  position: relative;
   max-width: 324px;
   max-height: 190px;
   overflow: hidden;
@@ -573,6 +623,54 @@ span.owl-play {
 .ImgWrapper:hover .categoryBoxImg {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 181, 225, 0);
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.ImgWrapper:hover .overlay {
+  background: rgba(0, 181, 225, 0.3);
+}
+
+.userActions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.heart #favorite {
+  fill: #BDBDBD;
+}
+
+.heart.active #favorite {
+  fill: #DA4336;
+}
+
+.heartSVG {
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .catInfoWrapper {
@@ -609,6 +707,7 @@ span.owl-play {
   font-size: 12px;
   color: #334454;
   margin-bottom: 20px;
+  line-height: 14px;
 }
 
 .author {
