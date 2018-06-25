@@ -14,7 +14,7 @@ header.mainHeader {
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
 }
-.container {
+.myContainer {
     max-width: 1100px;
     margin: 0 auto;
     height: 105px;
@@ -368,4 +368,63 @@ span.owl-play {
     color: $gray;
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 60px;
+}
+// categoryBox
+
+.categoryBox {
+    max-width: 340px;
+    height: 400px;
+    background: $white;
+    box-shadow: 2px 2px 5px rgba(0,0,0, .5);
+    margin: 0 auto;
+    padding: 12px 8px 18px;
+}
+.ImgWrapper {
+    max-width: 324px;
+    max-height: 190px;
+    overflow: hidden;
+}
+.categoryBoxImg {
+    display: block;
+    width: 100%;
+    transform: scale(1);
+    transition: transform .3s;
+}
+.ImgWrapper:hover .categoryBoxImg {
+    transform: scale(1.1);
+}
+.catInfoWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.catName, .catDate {
+    font-family: $roboto;
+    color: $gray;
+    font-size: 12px;
+}
+.articleWrapper {
+    
+}
+.categoryBox:hover .articleTitle {
+    color: $blue;
+}
+.articleTitle {
+    font-family: $notoSansGeorgianRegular;
+    font-size: 16px;
+    color: $navyBlue;
+    padding: 20px 0 14px;
+    transition: color .3s;
+}
+.articleText {
+    font-family: $arialGeo;
+    font-size: 12px;
+    color: $navyBlue;
+    margin-bottom: 20px;
+}
+.author {
+    font-family: $roboto;
+    font-size: 12px;
+    color: $gray;
 }
