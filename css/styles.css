@@ -222,6 +222,8 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #jssor_1 {
@@ -250,6 +252,9 @@ html, body {
   margin-top: -19px;
   position: relative;
   top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 38px;
   height: 38px;
   -webkit-animation-name: jssorl-009-spin;
@@ -294,19 +299,80 @@ html, body {
 }
 
 .jssorTitleText {
+  font-family: "NotoSansGeorgian-Regular";
   position: absolute;
-  top: 195px;
-  left: 330px;
-  width: 300px;
-  height: 250px;
-  background-color: rgba(255, 188, 5, 0.8);
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 1.88;
-  text-align: left;
-  padding: 10px 10px 10px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+}
+
+.jssorTitle-h1 {
+  text-align: center;
+  font-size: 28px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.jssorTitle-h3 {
+  font-size: 18px;
+  width: 50%;
+  margin: 40px auto 50px;
+}
+
+.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "NotoSansGeorgian-Condensed";
+  font-size: 12px;
+  width: 60px;
+  height: 26px;
+  background: #00B5E1;
+  color: #fff;
+  margin: 0 auto;
+  -webkit-transition: background .3s, color .3s;
+  transition: background .3s, color .3s;
+}
+
+.more:hover {
+  background: #fff;
+  color: #2C3D4E;
+}
+
+.jssorTitle-a {
+  position: relative;
+}
+
+.jssorTitle-a:before, .jssorTitle-a:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 3px 20px #777;
+          box-shadow: 0 3px 20px #777;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+.jssorTitle-a:after {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  right: 10px;
+  left: auto;
 }
 
 /*jssor slider bullet skin 064 css*/
@@ -320,7 +386,7 @@ html, body {
 }
 
 .jssorb064 .i .b {
-  fill: #000;
+  fill: #fff;
   fill-opacity: .5;
   stroke: #fff;
   stroke-width: 400;
@@ -333,15 +399,16 @@ html, body {
 }
 
 .jssorb064 .iav .b {
-  fill: #ffe200;
+  fill: #fff;
   fill-opacity: 1;
-  stroke: #ffaa00;
+  stroke: #fff;
   stroke-opacity: .7;
   stroke-width: 2000;
 }
 
 .jssorb064 .iav:hover .b {
-  fill-opacity: .6;
+  fill: #fff;
+  stroke: #fff;
 }
 
 .jssorb064 .i.idn {
@@ -353,6 +420,16 @@ html, body {
   display: block;
   position: absolute;
   cursor: pointer;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
 }
 
 .jssora051 .a {
@@ -443,4 +520,24 @@ span.owl-play {
 
 .owl-dots {
   display: none;
+}
+
+.random {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.title-h1 {
+  font-family: "NotoSansGeorgian-Regular";
+  font-size: 24px;
+  color: #2C3D4E;
+  text-align: center;
+}
+
+.title-h2 {
+  font-family: "NotoSansGeorgian-Regular";
+  font-size: 24px;
+  color: #BDBDBD;
+  text-align: center;
+  margin-top: 15px;
 }
