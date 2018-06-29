@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    // Header menu
+
+    
+
+
+
+
+
     $('#openHiddenSerchBox').on('click', function(){
         $(this).addClass('hiddenCloseImg');
         $('#closeHiddenSerchBox').removeClass('hiddenCloseImg');
@@ -34,6 +42,7 @@ $('.owl-category').owlCarousel({
         }
     }
 });
+
 
 
 

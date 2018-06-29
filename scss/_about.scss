@@ -1,0 +1,61 @@
+/* ============================
+    About Project
+============================= */
+
+.youtubeChannel {
+    margin-top: 105px;
+}
+.youtubeChannel > h1 {
+    font-family: 'NotoSerifGeorgian';
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 50px 0;
+    color: $darkblue;
+}
+.youtubeVideo {
+
+}
+.youtube {
+    width: 100%;
+    height: 330px;
+}
+.youtubeChannel > p {
+    font-family: 'arial_geo';
+    font-size: 18px;
+    color: $gray;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0 40px;
+    line-height: 20px;
+}
+.border-top {
+    border-top: 1px solid $lightGray;
+    padding-top: 30px;
+}
+.margin-bottom {
+    margin-bottom: 60px;
+}
+.about-content-h2 {
+    font-family: 'NotoSansGeorgian-Regular';
+    font-size: 24px;
+    color: $darkblue;
+    padding-bottom: 40px;
+}
+p.about-content-p {
+    font-family: 'arial_geo';
+    font-size: 18px;
+    color: $gray;
+    margin: 0 auto;
+    line-height: 20px;
+}
+.about-content-img {
+    display: block;
+    width: 130px;
+    height: 150px;
+    background: #CCCCCC;
+    margin: 0 auto;
+}
+.border-top .col-md-7, .border-top .col-md-5 {
+    padding: 0;
+}

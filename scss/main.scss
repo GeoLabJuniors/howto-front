@@ -4,7 +4,9 @@
 @import 'rating';
 
 // mainHeader Styles
-
+body {
+    background: $white;
+}
 header.mainHeader {
     position: fixed;
     left: 0;
@@ -15,6 +17,8 @@ header.mainHeader {
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
 }
+
+
 .myContainer {
     max-width: 1100px;
     margin: 0 auto;
@@ -484,7 +488,7 @@ footer {
 }
 .footer-p {
     height: 125px;
-    line-height: 125px;
+    line-height: 120px;
     text-align: center;
 }
 .footer-p > a {
@@ -507,3 +511,5 @@ a.facebook {
     width: 27px;
     height: 27px;
 }
+
+@import 'about';
