@@ -1,0 +1,90 @@
+/* ============================
+    Articles Page
+============================= */
+
+.article-hero {
+    position: relative;
+    margin-top: 105px;
+    background: red;
+}
+.article-hero > h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    color: #fff;
+    font-family: $notoSansGeorgianRegular;
+}
+.hero-img {
+    width: 100%;
+    height: 685px;
+}
+.search-resoult {
+
+}
+.resoult {
+    padding: 35px 0 25px 30px;
+    font-size: 14px;
+    color: #606060;
+    font-family: $arialGeo;
+}
+.number {
+
+}
+.category-wrapper {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, .3);
+    padding: 20px 15px;
+}
+.category-title {
+    color: #589FA5;
+    font-family: $notoSerifGeorgian;
+    font-size: 14px;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+input[type=range] {
+    margin: 25px 0;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    height: 10px;
+}
+.input-wrapper > label {
+    font-family: $notoSerifGeorgian;
+    font-size: 10px;
+    color: #606060;
+    font-weight: bold;
+}
+.input-wrapper > label > input[type=radio] {
+    width: 10px;
+    height: 10px;
+    margin-left: 7px;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 125px;
+}
+.fas.fa-envelope {
+    color: #fff;
+    font-size: 22px;
+}
+.fas.fa-phone {
+    color: #fff;
+    font-size: 18px;
+}
+.fab.fa-facebook {
+    color: #fff;
+    font-size: 20px;
+}
+.icon-wrapper {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}

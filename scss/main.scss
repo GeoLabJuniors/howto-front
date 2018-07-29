@@ -382,7 +382,7 @@ span.owl-play {
     height: 400px;
     background: $white;
     box-shadow: 2px 2px 5px rgba(0,0,0, .5);
-    margin: 0 auto;
+    margin: 0 auto 35px;
     padding: 12px 8px 18px;
 }
 .ImgWrapper {
@@ -513,3 +513,4 @@ a.facebook {
 }
 
 @import 'about';
+@import 'articles';
