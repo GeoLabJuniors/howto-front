@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How-to | Article</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Facebook Plugin-->
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script src="js/facebook.js"></script>
+
+    <header class="mainHeader">
+        <div class="myContainer flexBox">
+            <a href="index.html" class="brandName">howto</a>
+            <nav class="headerNav">
+                <ul class="headerNav-ul flexBox">
+                    <li><a href="#" class="headerNav-a active">პროექტის შესახებ</a></li>
+                    <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
+                    <li><a href="#" class="headerNav-a">explore</a></li>
+                </ul>
+            </nav>
+            <div class="searchProfile flexBox">
+                <div class="searchBox">
+                    <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
+                    <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
+                </div> <!--searchBox-->
+
+                <div class="loginBox">
+                    <p>შესვლა</p>
+                </div> <!--loginBox-->
+            </div> <!--searchProfile-->
+        </div> <!--container-->
+
+        <form class="hiddensearchBox hiddenForm">
+            <input type="text" name="">
+            <button id="hiddenBtn" title="Search">
+                <img src="img/search.png">
+            </button>            
+        </form> <!--hiddensearchBox-->
+    </header>
+
+    <section class="full-article container">
+        <div class="row">
+            <div class="col-md-9 full-article-wrapper">
+                <div class="full-article-img-wrapper">
+                    <img src="http://via.placeholder.com/765x480" class="full-img">
+                </div> <!--full-article-img-wrapper-->
+                <div class="full-article-info"><span>10 ივნისი, 2018</span> /კატეგორია: <span>დეკორაციები</span></div>
+                <div class="full-art-title">
+                    <h1 class="full-art-h1">Lorem Ipsum</h1>
+                    <div class="heart">
+                        <svg viewBox="0 0 24 24" class='heartSVG'>
+                            <g id="favorite">
+                                <path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div> <!--full-art-title-->
+
+                <!-- Rating Stars Box -->
+                <div class='rating-stars'>
+                    <ul id='stars'>
+                        <li class='star' data-value='1'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' data-value='2'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' data-value='3'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' data-value='4'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' data-value='5'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                    </ul>
+                </div> <!--rating-stars-->
+
+                <p class="full-art-text">ლორემ იპსუმ ამომავალ დავურეკოთ შინაური, გგაყიდული
+                     გამიკეთებიაო, ვარგიხარ, მსაჯული ეიზენმა, ხმარობს შეუკავებიათო გვიამბო
+                      მიცვალებულთ ჩანჩალით, ალბომები დეფექტური. ბღავილს გაყოჩაღდა მოვნახე,
+                       ჟურნალში, კოჭლის იმიტაციას, სათვალეში მიქვია, უქნიეს პატრონმა შემსუბუქებაზე,
+                       
+                       დახავსებული გამოსვლებში. კიწმარიშვილი დაუყოვნებლივ რვეულებს, ჩიტურაშვილის 
+                       ბრძანა პერობამდე ბრაგუნით ჩაუვლია აქტიური, მიმაქვს მოსვლაც ნაბიჯის დავინდობთ მოვნახე.
+                        კიწმარიშვილი პატრონმა დახავსებული ყვითელა ბღავილს მკლავებისა, ბორჩალოს გვიშლის.</p>
+                <div class="tags">თაგები: <a href="#">ქორწილი</a>,<a href="#">ორგანიზება</a>...</div>
+
+                <div class="fb-like" 
+                     data-href="https://developers.facebook.com/docs/plugins/" 
+                     data-width="65" 
+                     data-layout="button_count" 
+                     data-action="like" 
+                     data-size="large" 
+                     data-show-faces="false" 
+                     data-share="true">
+                </div>
+
+                <div class="fb-comments" 
+                     data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
+                     data-numposts="5">
+                </div>
+            </div> <!--col-md-9 full-article-wrapper-->
+            <div class="col-md-3"></div>
+        </div>
+    </section> <!---->
+
+    
+
+
+    
+
+    
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 flex-end">
+                    <div class="icon-wrapper">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>                 
+            </div> <!--row-->
+        </div> <!--container-->
+    </footer>
+
+
+<script src="js/jQ.3.3.1.js"></script>
+<script src="js/raiting.js"></script>
+<script src="js/heart.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

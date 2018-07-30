@@ -1,0 +1,53 @@
+/* ============================
+   Full Article Page
+============================= */
+
+.full-article {
+    margin-top: 160px;
+}
+.full-article-wrapper {
+    width: 765px;
+}
+.full-article-img-wrapper {
+    width: 765px;
+    height: 480px;
+    overflow: hidden;
+}
+.full-img {
+    width: 765px;
+    height: 480px;
+}
+.full-article-info {
+    color: #475665;
+    font-family: $arialGeo;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 35px;
+}
+.full-article-info > span:nth-child(2) {
+    color:#0E3E5E;
+}
+.full-art-title {
+    display: flex;
+    margin-bottom: 30px;
+}
+.full-art-h1 {
+    color: #475665;
+    font-family: $arialGeo;
+    font-size: 30px;
+}
+.full-art-text {
+    color: #475665;
+    font-family: $arialGeo;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 25px 0 20px;
+}
+.tags {
+    font-family: $arialGeo;
+    color: #000;
+    font-size: 14px;
+}
+.tags > a {
+    color: #475665;
+}
