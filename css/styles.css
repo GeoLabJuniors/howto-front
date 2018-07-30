@@ -734,7 +734,7 @@ input[type=range] {
   margin-top: 160px; }
 
 .full-article-wrapper {
-  width: 765px; }
+  max-width: 765px; }
 
 .full-article-img-wrapper {
   width: 765px;
@@ -778,5 +778,54 @@ input[type=range] {
 
 .tags > a {
   color: #475665; }
+
+.fb-like {
+  margin: 15px 0 25px; }
+
+/*=============== art-side-bar ===============*/
+.art-side-bar {
+  width: 300px;
+  margin-left: 60px; }
+
+.profile-box {
+  width: 100%;
+  height: 290px;
+  background: #EFEFEF;
+  padding: 33px 15px 20px;
+  margin-bottom: 25px; }
+
+.profile-img {
+  width: 270px;
+  height: 180px; }
+
+.user-name {
+  font-family: "arial_geo";
+  color: #475665;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 30px; }
+
+.posts-box {
+  margin-bottom: 20px;
+  background: #EFEFEF; }
+
+.post-header {
+  height: 45px;
+  background: #589FA5;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-family: "arial_geo";
+  font-size: 17px; }
+
+.post-wrapper {
+  padding: 15px 40px; }
+
+.post {
+  display: block;
+  color: #475665;
+  font-family: "arial_geo";
+  font-size: 10px;
+  margin-bottom: 22px; }
 
 /*# sourceMappingURL=styles.css.map */
