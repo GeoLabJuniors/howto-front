@@ -80,6 +80,10 @@
 .posts-box {
     margin-bottom: 20px;
     background: #EFEFEF;
+    min-height: 340px;
+}
+.posts-box:last-child {
+    min-height: 490px;
 }
 .post-header {
     height: 45px;

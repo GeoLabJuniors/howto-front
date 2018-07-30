@@ -120,7 +120,7 @@ header.mainHeader {
   left: 0;
   top: 0;
   width: 100%;
-  height: 105px;
+  height: 95px;
   background: #fff;
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
@@ -128,7 +128,7 @@ header.mainHeader {
 .myContainer {
   max-width: 1100px;
   margin: 0 auto;
-  height: 105px; }
+  height: 95px; }
 
 .flexBox {
   display: flex;
@@ -170,7 +170,7 @@ img.hiddenCloseImg {
 form.hiddensearchBox {
   position: absolute;
   right: 30px;
-  top: 106px;
+  top: 96px;
   display: block;
   width: 230px;
   height: 45px; }
@@ -591,7 +591,7 @@ a.facebook {
     About Project
 ============================= */
 .youtubeChannel {
-  margin-top: 105px; }
+  margin-top: 95px; }
 
 .youtubeChannel > h1 {
   font-family: 'NotoSerifGeorgian';
@@ -649,8 +649,7 @@ p.about-content-p {
 ============================= */
 .article-hero {
   position: relative;
-  margin-top: 105px;
-  background: red; }
+  margin-top: 95px; }
 
 .article-hero > h1 {
   position: absolute;
@@ -807,7 +806,11 @@ input[type=range] {
 
 .posts-box {
   margin-bottom: 20px;
-  background: #EFEFEF; }
+  background: #EFEFEF;
+  min-height: 340px; }
+
+.posts-box:last-child {
+  min-height: 490px; }
 
 .post-header {
   height: 45px;
