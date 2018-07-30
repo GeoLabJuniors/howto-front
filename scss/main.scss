@@ -70,7 +70,7 @@ img.hiddenCloseImg {
 form.hiddensearchBox {
     position: absolute;
     right: 30px;
-    top: 96px;
+    top: 100px;
     display: block;
     width: 230px;
     height: 45px;
@@ -82,8 +82,8 @@ form.hiddensearchBox input {
     width: 230px;
     height: 45px;
     border: none;
-    background: $white;
     padding: 0 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0, .5);
 }
 button#hiddenBtn {
     position: absolute;
