@@ -15,7 +15,7 @@
             <a href="index.html" class="brandName">howto</a>
             <nav class="headerNav">
                 <ul class="headerNav-ul flexBox">
-                    <li><a href="#" class="headerNav-a active">პროექტის შესახებ</a></li>
+                    <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
                     <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
                     <li><a href="#" class="headerNav-a">explore</a></li>
                 </ul>
@@ -57,7 +57,15 @@
             <div class="col-md-3">
                 <div class="category-wrapper">
                     <div class="category-title">რეიტინგის მიხედვით</div>
-                    <input type="range" >
+                    <div class="range-value-wrapper">
+                        <span id="value-0">0</span>
+                        <span id="value-1"></span>
+                        <span id="value-2"></span>
+                        <span id="value-3"></span>
+                        <span id="value-4"></span>
+                        <span id="value-5">5</span>
+                    </div>
+                    <input type="range" max="5" min="0" step="1" value="0" id="range" oninput="rangeValue()">
                     <div class="category-title">სორტირება</div>
                     <div class="input-wrapper">
                         <label>პოპულარული საიტები<input type="radio" name="articles"></label>
@@ -136,7 +144,7 @@
                             </div> <!--catInfoWrapper-->
 
                             <article class="articleWrapper">
-                                <h2 class="articleTitle">ლორემ იფსუმ</h2> <!--articleTitle-->
+                                <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                     შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
@@ -202,7 +210,7 @@
                             </div> <!--catInfoWrapper-->
 
                             <article class="articleWrapper">
-                                <h2 class="articleTitle">ლორემ იფსუმ</h2> <!--articleTitle-->
+                                <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                     შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
@@ -268,7 +276,7 @@
                             </div> <!--catInfoWrapper-->
 
                             <article class="articleWrapper">
-                                <h2 class="articleTitle">ლორემ იფსუმ</h2> <!--articleTitle-->
+                                <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                     შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
@@ -334,7 +342,7 @@
                             </div> <!--catInfoWrapper-->
 
                             <article class="articleWrapper">
-                                <h2 class="articleTitle">ლორემ იფსუმ</h2> <!--articleTitle-->
+                                <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                     შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
