@@ -69,4 +69,19 @@ function rangeValue() {
     };
 };
 
+// Fix menu Header
+var mainHeader = document.getElementsByClassName('mainHeader')[0];
 
+window.onscroll = function() {
+  if(window.pageYOffset >= 95) {
+    mainHeader.setAttribute('style','position:fixed;left:0;top:-95px;');
+  }
+
+  if(window.pageYOffset >= 500) {
+    mainHeader.setAttribute('style','position:fixed;left:0;top:0;z-index:1000;');
+  }
+
+  else {
+    mainHeader.setAttribute('style','position:initial;left:initial;top:initial;');
+  }
+}
