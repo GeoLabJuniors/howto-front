@@ -112,20 +112,35 @@ img {
 .rating-stars ul > li.star.selected > i.fa {
   color: #FFCC36; }
 
-body {
-  background: #fff; }
-
 header.mainHeader {
   width: 100%;
   height: 95px;
   background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  transition: top .3s; }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
 
 .myContainer {
   max-width: 1100px;
   margin: 0 auto;
   height: 95px; }
+
+.fixed-header {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: transform .3s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+.header-appear {
+  transform: translateY(0); }
+
+.miniContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 60px; }
 
 .flexBox {
   display: flex;
@@ -163,6 +178,53 @@ img.hiddenCloseImg {
 .closeImg {
   width: 22px;
   height: 22px; }
+
+img.hiddenCloseImg_fixed {
+  display: none; }
+
+form.hiddensearchBox_fixed {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  display: block;
+  width: 230px;
+  height: 45px;
+  z-index: 1000; }
+
+form.hiddensearchBox_fixed.hiddenForm_fixed {
+  display: none; }
+
+form.hiddensearchBox_fixed {
+  position: absolute;
+  right: 30px;
+  top: 65px;
+  display: block;
+  width: 230px;
+  height: 45px;
+  z-index: 1000; }
+
+form.hiddensearchBox_fixed.hiddenForm_fixed {
+  display: none; }
+
+form.hiddensearchBox_fixed input {
+  width: 230px;
+  height: 45px;
+  border: none;
+  padding: 0 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); }
+
+button#hiddenBtn_fixed {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: initial;
+  border: initial;
+  border-width: initial;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial; }
 
 form.hiddensearchBox {
   position: absolute;
@@ -205,6 +267,7 @@ button#hiddenBtn img {
   cursor: pointer; }
 
 html, body {
+  background: #fff;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -218,13 +281,12 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 95px);
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
 
 #jssor_1 {
   position: relative;
-  margin: 0 auto;
   top: 0px;
   left: 0px;
   width: 960px;
@@ -910,5 +972,90 @@ span[id*=value-] {
   font-family: "arial_geo";
   font-size: 10px;
   margin-bottom: 22px; }
+
+/* ============================
+    Quest Page
+============================= */
+.quest-section h1 {
+  font-family: "NotoSerifGeorgian";
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 60px 0 30px;
+  text-align: center;
+  color: #2C3D4E; }
+
+.quest-box {
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid grey; }
+
+.quest-box:last-child {
+  border-bottom: initial; }
+
+.quest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .quest-header .quest-info {
+    display: flex; }
+
+.quest-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; }
+
+.quest-title {
+  font-family: "NotoSansGeorgian-Regular";
+  align-self: flex-end;
+  color: #000;
+  font-size: 20px;
+  margin-left: 10px; }
+
+.quest-number {
+  font-family: "MyriadPro-Regular";
+  color: #000;
+  font-size: 27px; }
+
+.quest-text {
+  font-family: "arial_geo";
+  font-size: 20px;
+  margin: 25px 0 20px;
+  line-height: 24px;
+  color: #475665;
+  letter-spacing: .5px; }
+
+.read-more {
+  font-family: "arial_geo";
+  color: #475665;
+  font-size: 20px; }
+
+.quest-upvote {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #475665;
+  display: flex;
+  align-items: center; }
+
+.upvote {
+  font-family: "MyriadPro-Regular";
+  display: block;
+  color: #589FA5;
+  font-size: 20px;
+  width: 88px;
+  text-align: center; }
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: grey; }
+
+.upvote-N {
+  font-family: "MyriadPro-Regular";
+  display: block;
+  font-size: 29px;
+  color: #727272;
+  width: 57px;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

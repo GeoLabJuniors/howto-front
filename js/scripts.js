@@ -13,6 +13,20 @@ $(document).ready(function(){
         $('.hiddensearchBox').addClass('hiddenForm');
     });
 
+    // Fixed menu
+    $('#openHiddenSerchBox_fixed').on('click', function(){
+
+        $(this).addClass('hiddenCloseImg_fixed');
+        $('#closeHiddenSerchBox_fixed').removeClass('hiddenCloseImg_fixed');
+        $('.hiddensearchBox_fixed').removeClass('hiddenForm_fixed');
+    });
+
+    $('#closeHiddenSerchBox_fixed').on('click', function(){
+        $(this).addClass('hiddenCloseImg_fixed');
+        $('#openHiddenSerchBox_fixed').removeClass('hiddenCloseImg_fixed');
+        $('.hiddensearchBox_fixed').addClass('hiddenForm_fixed');
+    });
+
     // Owl carousel
 
 $('.owl-category').owlCarousel({
@@ -70,18 +84,36 @@ function rangeValue() {
 };
 
 // Fix menu Header
-var mainHeader = document.getElementsByClassName('mainHeader')[0];
+var fixedHeader = document.getElementById('fixed-header');
+var hiddenSearcBoxFixed = document.getElementById('hiddenSearcBox_fixed');
+
+var hiddenSearchBox = document.getElementById('hiddensearchBox');
+
+var searchImg = document.getElementById('closeHiddenSerchBox_fixed');
+var closeImg = document.getElementById('openHiddenSerchBox_fixed');
+
+var closeHiddenSerchBox = document.getElementById('closeHiddenSerchBox');
+var openHiddenSerchBox = document.getElementById('openHiddenSerchBox');
 
 window.onscroll = function() {
-  if(window.pageYOffset >= 95) {
-    mainHeader.setAttribute('style','position:fixed;left:0;top:-95px;');
+
+  if(window.pageYOffset >= 400) {
+    fixedHeader.classList.add('header-appear');
+  } else {
+    fixedHeader.classList.remove('header-appear');
   }
 
-  if(window.pageYOffset >= 500) {
-    mainHeader.setAttribute('style','position:fixed;left:0;top:0;z-index:1000;');
+  if(window.pageYOffset >= 100){
+    hiddenSearcBoxFixed.classList.add('hiddenForm_fixed');
+    searchImg.classList.add('hiddenCloseImg_fixed');
+    closeImg.classList.remove('hiddenCloseImg_fixed');
   }
 
-  else {
-    mainHeader.setAttribute('style','position:initial;left:initial;top:initial;');
+  if(window.pageYOffset >= 200+'px' && hiddenSearchBox.className('hiddensearchBox') == 'hiddensearchBox'){
+
+      hiddenSearchBox.classList.add('hiddenForm');
+      openHiddenSerchBox.classList.add('hiddenCloseImg');
+      closeHiddenSerchBox.classList.remove('hiddenCloseImg');
+
   }
 }

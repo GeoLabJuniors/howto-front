@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
@@ -10,35 +10,76 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="mainHeader">
-        <div class="myContainer flexBox">
-            <a href="index.html" class="brandName">howto</a>
-            <nav class="headerNav">
-                <ul class="headerNav-ul flexBox">
-                    <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
-                    <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
-                    <li><a href="#" class="headerNav-a">explore</a></li>
-                </ul>
-            </nav>
-            <div class="searchProfile flexBox">
-                <div class="searchBox">
-                    <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
-                    <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
-                </div> <!--searchBox-->
+  <header class="mainHeader">
+      <div class="myContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="quest.html" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
+                  <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
+              </div> <!--searchBox-->
 
-                <div class="loginBox">
-                    <p>შესვლა</p>
-                </div> <!--loginBox-->
-            </div> <!--searchProfile-->
-        </div> <!--container-->
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
 
-        <form class="hiddensearchBox hiddenForm">
-            <input type="text" name="">
-            <button id="hiddenBtn" title="Search">
-                <img src="img/search.png">
-            </button>            
-        </form> <!--hiddensearchBox-->
-    </header>
+      <form class="hiddensearchBox hiddenForm" id="hiddenSearcBox">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+
+
+    <div class="fixed-header" id="fixed-header">
+      <div class="miniContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox_fixed">
+                  <img src="img/close.png"
+                       alt="how to close image"
+                       class="closeImg hiddenCloseImg_fixed"
+                       id="closeHiddenSerchBox_fixed">
+              </div> <!--searchBox-->
+
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
+
+      <form class="hiddensearchBox_fixed hiddenForm_fixed" id="hiddenSearcBox_fixed">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn_fixed" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+    </div> <!--fixedHeader-->
+  </header>
 
     <section class="article-hero">
         <img src="http://via.placeholder.com/1280x685" class="hero-img">
@@ -80,14 +121,14 @@
                     </div> -->
                     <div class="category-title">ყველა კატეგორია</div>
                     <div class="input-wrapper">
-                        <label>ხელოვნება<input type="radio" name="articles"></label>
+                        <label><input type="radio" name="articles">ხელოვნება</label>
                     </div>
                     <div class="input-wrapper">
-                        <label>მუსიკა<input type="radio" name="articles"></label>
+                        <label><input type="radio" name="articles">მუსიკა</label>
                     </div>
                     <div class="input-wrapper">
-                            <label>დეკორაციები<input type="radio" name="articles"></label>
-                        </div>
+                            <label><input type="radio" name="articles">დეკორაციები</label>
+                    </div>
                 </div> <!--category-wrapper-->
             </div> <!--col-md-3-->
             <div class="col-md-9">
@@ -101,7 +142,7 @@
                                 <div class="userActions">
 
                                     <section class='rating-widget'>
-    
+
                                         <!-- Rating Stars Box -->
                                         <div class='rating-stars'>
                                         <ul id='stars'>
@@ -122,13 +163,13 @@
                                             </li>
                                         </ul>
                                         </div>
-                                        
+
                                         <!-- <div class='success-box'>
                                         <div class='clearfix'></div>
                                         <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
                                         <div class='text-message'></div>
                                         <div class='clearfix'></div>
-                                        </div> --> 
+                                        </div> -->
                                     </section>
 
                                     <div class="heart">
@@ -152,7 +193,7 @@
                                 <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
-                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
+                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
                                     სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
                                 <a href="#" class="author">By Author</a>
                             </article> <!--articlWrapper-->
@@ -167,7 +208,7 @@
                                 <div class="userActions">
 
                                     <section class='rating-widget'>
-    
+
                                         <!-- Rating Stars Box -->
                                         <div class='rating-stars'>
                                         <ul id='stars'>
@@ -188,13 +229,13 @@
                                             </li>
                                         </ul>
                                         </div>
-                                        
+
                                         <!-- <div class='success-box'>
                                         <div class='clearfix'></div>
                                         <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
                                         <div class='text-message'></div>
                                         <div class='clearfix'></div>
-                                        </div> --> 
+                                        </div> -->
                                     </section>
 
                                     <div class="heart">
@@ -218,7 +259,7 @@
                                 <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
-                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
+                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
                                     სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
                                 <a href="#" class="author">By Author</a>
                             </article> <!--articlWrapper-->
@@ -233,7 +274,7 @@
                                 <div class="userActions">
 
                                     <section class='rating-widget'>
-    
+
                                         <!-- Rating Stars Box -->
                                         <div class='rating-stars'>
                                         <ul id='stars'>
@@ -254,13 +295,13 @@
                                             </li>
                                         </ul>
                                         </div>
-                                        
+
                                         <!-- <div class='success-box'>
                                         <div class='clearfix'></div>
                                         <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
                                         <div class='text-message'></div>
                                         <div class='clearfix'></div>
-                                        </div> --> 
+                                        </div> -->
                                     </section>
 
                                     <div class="heart">
@@ -284,7 +325,7 @@
                                 <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
-                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
+                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
                                     სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
                                 <a href="#" class="author">By Author</a>
                             </article> <!--articlWrapper-->
@@ -299,7 +340,7 @@
                                 <div class="userActions">
 
                                     <section class='rating-widget'>
-    
+
                                         <!-- Rating Stars Box -->
                                         <div class='rating-stars'>
                                         <ul id='stars'>
@@ -320,13 +361,13 @@
                                             </li>
                                         </ul>
                                         </div>
-                                        
+
                                         <!-- <div class='success-box'>
                                         <div class='clearfix'></div>
                                         <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
                                         <div class='text-message'></div>
                                         <div class='clearfix'></div>
-                                        </div> --> 
+                                        </div> -->
                                     </section>
 
                                     <div class="heart">
@@ -350,7 +391,7 @@
                                 <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
-                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად 
+                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
                                     სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
                                 <a href="#" class="author">By Author</a>
                             </article> <!--articlWrapper-->
@@ -362,11 +403,11 @@
     </section> <!--article-content-->
 
 
-    
 
-    
 
-    
+
+
+
     <footer>
         <div class="container">
             <div class="row">
@@ -376,7 +417,7 @@
                         <a href="#"><i class="fas fa-envelope"></i></a>
                         <a href="#"><i class="fas fa-phone"></i></a>
                     </div>
-                </div>                 
+                </div>
             </div> <!--row-->
         </div> <!--container-->
     </footer>

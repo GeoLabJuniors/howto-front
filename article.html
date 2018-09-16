@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
@@ -20,35 +20,76 @@
   <div id="fb-root"></div>
   <script src="js/facebook.js"></script>
 
-    <header class="mainHeader">
-        <div class="myContainer flexBox">
-            <a href="index.html" class="brandName">howto</a>
-            <nav class="headerNav">
-                <ul class="headerNav-ul flexBox">
-                    <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
-                    <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
-                    <li><a href="#" class="headerNav-a">explore</a></li>
-                </ul>
-            </nav>
-            <div class="searchProfile flexBox">
-                <div class="searchBox">
-                    <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
-                    <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
-                </div> <!--searchBox-->
+  <header class="mainHeader">
+      <div class="myContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="quest.html" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
+                  <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
+              </div> <!--searchBox-->
 
-                <div class="loginBox">
-                    <p>შესვლა</p>
-                </div> <!--loginBox-->
-            </div> <!--searchProfile-->
-        </div> <!--container-->
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
 
-        <form class="hiddensearchBox hiddenForm">
-            <input type="text" name="">
-            <button id="hiddenBtn" title="Search">
-                <img src="img/search.png">
-            </button>            
-        </form> <!--hiddensearchBox-->
-    </header>
+      <form class="hiddensearchBox hiddenForm" id="hiddenSearcBox">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+
+
+    <div class="fixed-header" id="fixed-header">
+      <div class="miniContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox_fixed">
+                  <img src="img/close.png"
+                       alt="how to close image"
+                       class="closeImg hiddenCloseImg_fixed"
+                       id="closeHiddenSerchBox_fixed">
+              </div> <!--searchBox-->
+
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
+
+      <form class="hiddensearchBox_fixed hiddenForm_fixed" id="hiddenSearcBox_fixed">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn_fixed" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+    </div> <!--fixedHeader-->
+  </header>
 
     <section class="full-article container">
         <div class="row">
@@ -93,24 +134,24 @@
                      გამიკეთებიაო, ვარგიხარ, მსაჯული ეიზენმა, ხმარობს შეუკავებიათო გვიამბო
                       მიცვალებულთ ჩანჩალით, ალბომები დეფექტური. ბღავილს გაყოჩაღდა მოვნახე,
                        ჟურნალში, კოჭლის იმიტაციას, სათვალეში მიქვია, უქნიეს პატრონმა შემსუბუქებაზე,
-                       
-                       დახავსებული გამოსვლებში. კიწმარიშვილი დაუყოვნებლივ რვეულებს, ჩიტურაშვილის 
+
+                       დახავსებული გამოსვლებში. კიწმარიშვილი დაუყოვნებლივ რვეულებს, ჩიტურაშვილის
                        ბრძანა პერობამდე ბრაგუნით ჩაუვლია აქტიური, მიმაქვს მოსვლაც ნაბიჯის დავინდობთ მოვნახე.
                         კიწმარიშვილი პატრონმა დახავსებული ყვითელა ბღავილს მკლავებისა, ბორჩალოს გვიშლის.</p>
                 <div class="tags">თაგები: <a href="#">ქორწილი</a>,<a href="#">ორგანიზება</a>...</div>
 
-                <div class="fb-like" 
-                     data-href="http://tbilisi.atwebpages.com/article.html" 
-                     data-layout="button_count" 
-                     data-action="like" 
-                     data-size="large" 
-                     data-show-faces="true" 
+                <div class="fb-like"
+                     data-href="http://tbilisi.atwebpages.com/article.html"
+                     data-layout="button_count"
+                     data-action="like"
+                     data-size="large"
+                     data-show-faces="true"
                      data-share="true">
                 </div>
 
-                <div class="fb-comments" 
-                     data-href="http://tbilisi.atwebpages.com/article.html" 
-                     data-width="765" 
+                <div class="fb-comments"
+                     data-href="http://tbilisi.atwebpages.com/article.html"
+                     data-width="765"
                      data-numposts="3">
                 </div>
             </div> <!--col-md-9 full-article-wrapper-->
@@ -126,15 +167,15 @@
                             ავტორის ბოლო პოსტები
                         </div>
                         <div class="post-wrapper">
-                            <a href="#" class="post">შიგთავსს შეუძლია მკითხველის 
-                                ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება 
+                            <a href="#" class="post">შიგთავსს შეუძლია მკითხველის
+                                ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება
                             </a>
-                            <a href="#" class="post">შიგთავსს შეუძლია მკითხველის ყურადღება 
+                            <a href="#" class="post">შიგთავსს შეუძლია მკითხველის ყურადღება
                             </a>
-                            <a href="#" class="post">შიგთავსს შეუძლია მკითხველის 
-                                ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება 
+                            <a href="#" class="post">შიგთავსს შეუძლია მკითხველის
+                                ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება
                             </a>
-                        </div>                      
+                        </div>
                     </div> <!--last-posts-box-->
 
                     <div class="posts-box">
@@ -142,37 +183,37 @@
                                 მსგავსი პოსტები
                             </div>
                             <div class="post-wrapper">
-                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის 
-                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება 
+                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის
+                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება
                                 </a>
-                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის ყურადღება 
+                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის ყურადღება
                                 </a>
-                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის 
-                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება 
+                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის
+                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება
                                 </a>
-                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის 
-                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება 
+                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის
+                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება
                                 </a>
-                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის ყურადღება 
+                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის ყურადღება
                                 </a>
-                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის 
-                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება 
+                                <a href="#" class="post">შიგთავსს შეუძლია მკითხველის
+                                    ყურადღება შიგთავსს შეუძლია მკითხველის ყურადღება
                                 </a>
-                            </div>                      
+                            </div>
                         </div> <!--last-posts-box-->
                 </div> <!--art-side-bar-->
             </div>
         </div> <!--row-->
     </section> <!---->
 
-    
 
 
-    
 
-    
 
-    
+
+
+
+
     <footer>
         <div class="container">
             <div class="row">
@@ -182,7 +223,7 @@
                         <a href="#"><i class="fas fa-envelope"></i></a>
                         <a href="#"><i class="fas fa-phone"></i></a>
                     </div>
-                </div>                 
+                </div>
             </div> <!--row-->
         </div> <!--container-->
     </footer>

@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
@@ -15,49 +15,89 @@
     <script src="js/JssorScript.js"></script>
 </head>
 <body>
-    <header class="mainHeader">
-        <div class="myContainer flexBox">
-            <a href="index.html" class="brandName">howto</a>
-            <nav class="headerNav">
-                <ul class="headerNav-ul flexBox">
-                    <li><a href="#" class="headerNav-a active">პროექტის შესახებ</a></li>
-                    <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
-                    <li><a href="#" class="headerNav-a">explore</a></li>
-                </ul>
-            </nav>
-            <div class="searchProfile flexBox">
-                <div class="searchBox">
-                    <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
-                    <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
-                </div> <!--searchBox-->
+  <header class="mainHeader">
+      <div class="myContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="quest.html" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
+                  <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
+              </div> <!--searchBox-->
 
-                <div class="loginBox">
-                    <p>შესვლა</p>
-                </div> <!--loginBox-->
-            </div> <!--searchProfile-->
-        </div> <!--container-->
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
 
-        <form class="hiddensearchBox hiddenForm">
-            <input type="text" name="">
-            <button id="hiddenBtn" title="Search">
-                <img src="img/search.png">
-            </button>
-            
-        </form> <!--hiddensearchBox-->
-    </header>
+      <form class="hiddensearchBox hiddenForm" id="hiddenSearcBox">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+
+
+    <div class="fixed-header" id="fixed-header">
+      <div class="miniContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox_fixed">
+                  <img src="img/close.png"
+                       alt="how to close image"
+                       class="closeImg hiddenCloseImg_fixed"
+                       id="closeHiddenSerchBox_fixed">
+              </div> <!--searchBox-->
+
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
+
+      <form class="hiddensearchBox_fixed hiddenForm_fixed" id="hiddenSearcBox_fixed">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn_fixed" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+    </div> <!--fixedHeader-->
+  </header>
 
 
     <section class="youtubeChannel">
         <h1>პროექტის შესახებ</h1>
 
         <div class="youtubeVideo">
-            
+
             <iframe class="youtube" src="https://www.youtube.com/embed/svVfo34U4iI?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div> <!--/youtubeVideo-->
 
-        <p>ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება 
-            მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ 
-            იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე 
+        <p>ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება
+            მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ
+            იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე
         </p>
     </section> <!-- /youtubeChannel-->
 
@@ -66,10 +106,10 @@
             <div class="row margin-bottom">
                 <div class="col-md-7">
                     <h2 class="about-content-h2">ლორემ იფსუმ</h2>
-                    <p class="about-content-p">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია 
-                        მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი 
-                        შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე 
-                        მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე 
+                    <p class="about-content-p">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია
+                        მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
+                        შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე
+                        მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე
                         ერთიდაიგივე</p>
                 </div>
                 <div class="col-md-5">
@@ -83,10 +123,10 @@
                     </div>
                     <div class="col-md-7">
                         <h2 class="about-content-h2">ლორემ იფსუმ</h2>
-                        <p class="about-content-p">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია 
-                            მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი 
-                            შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე 
-                            მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე 
+                        <p class="about-content-p">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია
+                            მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
+                            შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე
+                            მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე
                             ერთიდაიგივე</p>
                     </div>
                 </div> <!--/row-->
@@ -94,10 +134,10 @@
                 <div class="row margin-bottom">
                         <div class="col-md-7">
                             <h2 class="about-content-h2">ლორემ იფსუმ</h2>
-                            <p class="about-content-p">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია 
-                                მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი 
-                                შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე 
-                                მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე 
+                            <p class="about-content-p">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია
+                                მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
+                                შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე
+                                მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე
                                 ერთიდაიგივე</p>
                         </div>
                         <div class="col-md-5">
@@ -107,7 +147,7 @@
         </div> <!--/container-->
     </section> <!--/about-content-->
 
-    
+
     <footer>
         <div class="container">
             <div class="row">

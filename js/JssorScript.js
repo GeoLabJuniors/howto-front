@@ -3,8 +3,8 @@
 jssor_1_slider_init = function() {
 
     var jssor_1_options = {
-      $AutoPlay: 0,
-      $Idle: 2000,
+      $AutoPlay: 1,
+      $Idle: 7000,
       $SlideEasing: $Jease$.$InOutSine,
       $DragOrientation: 3,
       $ArrowNavigatorOptions: {

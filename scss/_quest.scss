@@ -1,0 +1,86 @@
+/* ============================
+    Quest Page
+============================= */
+.quest-section h1 {
+  font-family: $notoSerifGeorgian;
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 60px 0 30px;
+  text-align: center;
+  color: #2C3D4E;
+}
+.quest-box {
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid grey;
+}
+.quest-box:last-child {
+  border-bottom: initial;
+}
+.quest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .quest-info {
+    display: flex;
+  }
+}
+.quest-img {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+}
+.quest-title {
+  font-family: $notoSansGeorgianRegular;
+  align-self: flex-end;
+  color: #000;
+  font-size:20px;
+  margin-left: 10px;
+}
+.quest-number {
+  font-family: $myriad;
+  color: #000;
+  font-size:27px;
+}
+.quest-text {
+  font-family: $arialGeo;
+  font-size: 20px;
+  margin: 25px 0 20px;
+  line-height: 24px;
+  color: #475665;
+  letter-spacing: .5px;
+}
+.read-more {
+  font-family: $arialGeo;
+  color: #475665;
+  font-size: 20px;
+}
+.quest-upvote {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #475665;
+  display:flex;
+  align-items: center;
+}
+.upvote {
+  font-family: $myriad;
+  display: block;
+  color: #589FA5;
+  font-size: 20px;
+  width: 88px;
+  text-align: center;
+}
+.divider {
+  width: 1px;
+  height: 40px;
+  background: grey;
+}
+.upvote-N {
+  font-family: $myriad;
+  display: block;
+  font-size: 29px;
+  color: #727272;
+  width:57px;
+  text-align: center;
+}
