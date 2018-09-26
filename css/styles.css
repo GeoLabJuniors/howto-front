@@ -185,26 +185,18 @@ img.hiddenCloseImg_fixed {
 form.hiddensearchBox_fixed {
   position: absolute;
   right: 30px;
-  top: 100px;
-  display: block;
-  width: 230px;
-  height: 45px;
-  z-index: 1000; }
-
-form.hiddensearchBox_fixed.hiddenForm_fixed {
-  display: none; }
-
-form.hiddensearchBox_fixed {
-  position: absolute;
-  right: 30px;
   top: 65px;
-  display: block;
   width: 230px;
   height: 45px;
-  z-index: 1000; }
+  z-index: 1000;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+  opacity: 1; }
 
 form.hiddensearchBox_fixed.hiddenForm_fixed {
-  display: none; }
+  visibility: hidden;
+  opacity: 0;
+  top: 115px; }
 
 form.hiddensearchBox_fixed input {
   width: 230px;
@@ -230,13 +222,17 @@ form.hiddensearchBox {
   position: absolute;
   right: 30px;
   top: 100px;
-  display: block;
   width: 230px;
   height: 45px;
-  z-index: 1000; }
+  z-index: 1000;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+  opacity: 1; }
 
 form.hiddensearchBox.hiddenForm {
-  display: none; }
+  visibility: hidden;
+  opacity: 0;
+  top: 150px; }
 
 form.hiddensearchBox input {
   width: 230px;
@@ -648,6 +644,78 @@ a.facebook {
   width: 27px;
   height: 27px; }
 
+/* ======================= Log-in Modal ============================ */
+.login-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  overflow: hidden;
+  display: none; }
+
+.show-login-modal {
+  display: block; }
+
+.log-in {
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.far.fa-window-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #005A9B;
+  font-size: 20px;
+  cursor: pointer; }
+
+.log-in-h1 {
+  font-family: "NotoSansGeorgian-Regular";
+  text-align: center;
+  font-size: 30px;
+  color: #005A9B;
+  padding: 85px 0 80px;
+  letter-spacing: 1px; }
+
+.enter-wrapper {
+  width: 205px;
+  height: 55px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background: #fff; }
+
+a.enter-facebook {
+  width: 62px;
+  height: 55px;
+  background: #005A9B;
+  position: relative; }
+
+a.enter-facebook > i.fab.fa-facebook-f {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  font-size: 48px;
+  color: #fff; }
+
+.enter {
+  font-family: "NotoSansGeorgian-Regular";
+  background: #005A9B;
+  color: #fff;
+  width: 100%;
+  font-size: 22px;
+  line-height: 55px;
+  text-align: center;
+  width: 142px;
+  letter-spacing: 1px; }
+
 /* ============================
     About Project
 ============================= */
@@ -710,7 +778,7 @@ p.about-content-p {
 ============================= */
 .article-hero {
   position: relative;
-  margin-top: 95px; }
+  margin-top: 0px; }
 
 .article-hero > h1 {
   position: absolute;
@@ -731,6 +799,9 @@ p.about-content-p {
   color: #606060;
   font-family: "arial_geo"; }
 
+.article-content {
+  overflow: hidden; }
+
 .category-wrapper {
   width: 250px;
   border-radius: 20px;
@@ -743,9 +814,6 @@ p.about-content-p {
   font-size: 14px;
   padding: 5px 0;
   margin: 10px 0; }
-
-input[type=range] {
-  margin: 0 0 25px; }
 
 .input-wrapper {
   display: flex;
@@ -787,77 +855,49 @@ input[type=range] {
   display: flex;
   justify-content: space-between; }
 
+.edit-content {
+  display: flex;
+  justify-content: space-between; }
+
+.edit-content > span {
+  font-family: "Roboto-Regular_1";
+  font-size: 12px;
+  color: #BDBDBD;
+  line-height: 22px; }
+
+.edit-delete {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px; }
+
+.edit-img {
+  cursor: pointer;
+  transition: transform .3s; }
+
+.delete-img {
+  cursor: pointer;
+  transition: transform .3s; }
+
+.edit-img:hover, .delete-img:hover, .edit-page-icon:hover {
+  transform: scale(1.1); }
+
+.edit-page-icon {
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: transform .3s; }
+
+.sort-select {
+  width: 210px;
+  height: 30px; }
+
 /*================== Range - Slider ======================*/
-input[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-  background: transparent; }
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none; }
-
-input[type=range]:focus {
-  outline: none; }
-
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent; }
-
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 2px solid #606060;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background: #589FA5;
-  cursor: pointer;
-  margin-top: -4px; }
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-  border: 2px solid #606060;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background: #589FA5;
-  cursor: pointer; }
-
-/* All the same stuff for IE */
-input[type=range]::-ms-thumb {
-  border: 2px solid #606060;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background: #589FA5;
-  cursor: pointer; }
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
-  background: #606060; }
-
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
-  background: #606060; }
-
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent; }
-
-/* ========================= Range Control ===============*/
 .range-value-wrapper {
-  width: 100%;
+  width: 207px;
   height: 20px;
   margin-bottom: -10px;
   display: flex;
@@ -867,6 +907,10 @@ span[id*=value-] {
   color: #484949;
   font-size: 14px;
   font-weight: bold; }
+
+/*==================== UI Range Slider =======================*/
+#slider-range {
+  width: 200px; }
 
 /* ============================
    Full Article Page

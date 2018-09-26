@@ -85,26 +85,18 @@ img.hiddenCloseImg_fixed {
 form.hiddensearchBox_fixed {
     position: absolute;
     right: 30px;
-    top: 100px;
-    display: block;
-    width: 230px;
-    height: 45px;
-    z-index: 1000;
-}
-form.hiddensearchBox_fixed.hiddenForm_fixed {
-    display: none;
-}
-form.hiddensearchBox_fixed {
-    position: absolute;
-    right: 30px;
     top: 65px;
-    display: block;
     width: 230px;
     height: 45px;
     z-index: 1000;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
 }
 form.hiddensearchBox_fixed.hiddenForm_fixed {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 115px;
 }
 
 form.hiddensearchBox_fixed input {
@@ -132,13 +124,17 @@ form.hiddensearchBox {
     position: absolute;
     right: 30px;
     top: 100px;
-    display: block;
     width: 230px;
     height: 45px;
     z-index: 1000;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
 }
 form.hiddensearchBox.hiddenForm {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 150px;
 }
 
 form.hiddensearchBox input {
@@ -576,6 +572,78 @@ a.facebook {
     display: block;
     width: 27px;
     height: 27px;
+}
+/* ======================= Log-in Modal ============================ */
+.login-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+}
+.show-login-modal {
+    display: block;
+}
+.log-in {
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.far.fa-window-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #005A9B;
+    font-size: 20px;
+    cursor: pointer;
+}
+.log-in-h1 {
+    font-family: $notoSansGeorgianRegular;
+    text-align: center;
+    font-size: 30px;
+    color: #005A9B;
+    padding: 85px 0 80px;
+    letter-spacing: 1px;
+}
+.enter-wrapper {
+    width: 205px;
+    height: 55px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+a.enter-facebook {
+    width: 62px;
+    height: 55px;
+    background: #005A9B;
+    position: relative;
+}
+a.enter-facebook > i.fab.fa-facebook-f {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: 48px;
+    color: #fff;
+}
+.enter {
+    font-family: $notoSansGeorgianRegular;
+    background: #005A9B;
+    color: #fff;
+    width: 100%;
+    font-size: 22px;
+    line-height: 55px;
+    text-align: center;
+    width: 142px;
+    letter-spacing: 1px;
 }
 
 @import 'about';

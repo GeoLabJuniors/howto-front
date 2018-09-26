@@ -79,11 +79,11 @@ function rangeValue() {
     if ( range.value == 4 ) {
         v_4.innerHTML = 4;
     } else {
-        v_4.innerHTML = "";
+        v_4.innerHTML = ""; 
     };
 };
 
-// Fix menu Header
+// Fixed menu Header
 var fixedHeader = document.getElementById('fixed-header');
 var hiddenSearcBoxFixed = document.getElementById('hiddenSearcBox_fixed');
 
@@ -109,7 +109,7 @@ window.onscroll = function() {
     closeImg.classList.remove('hiddenCloseImg_fixed');
   }
 
-  if(window.pageYOffset >= 200+'px' && hiddenSearchBox.className('hiddensearchBox') == 'hiddensearchBox'){
+  if(window.pageYOffset >= 200 +'px' && hiddenSearchBox.className('hiddensearchBox') == 'hiddensearchBox'){
 
       hiddenSearchBox.classList.add('hiddenForm');
       openHiddenSerchBox.classList.add('hiddenCloseImg');
@@ -117,3 +117,21 @@ window.onscroll = function() {
 
   }
 }
+// Show Login Modal 
+var showBtn = document.getElementById('logIn');
+var loginModal = document.getElementById('loginModal');
+var mainBody = document.getElementsByTagName('body')[0];
+
+showBtn.addEventListener('click', function() {
+    loginModal.classList = 'login-wrap show-login-modal';
+    mainBody.style.overflow = 'hidden';
+});
+
+// Close Login Modal
+
+var closeBtn = document.getElementById('close-login-modal');
+
+closeBtn.onclick = function() {
+    loginModal.className = 'login-wrap';
+    mainBody.style.overflow = 'initial';
+};

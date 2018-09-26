@@ -4,7 +4,7 @@
 
 .article-hero {
     position: relative;
-    margin-top: 95px;
+    margin-top: 0px;
 }
 .article-hero > h1 {
     position: absolute;
@@ -31,6 +31,9 @@
 .number {
 
 }
+.article-content {
+    overflow: hidden;
+}
 .category-wrapper {
     width: 250px;
     border-radius: 20px;
@@ -44,9 +47,10 @@
     padding: 5px 0;
     margin: 10px 0;
 }
-input[type=range] {
-    margin: 0 0 25px;
-}
+
+// input[type=range] {
+//     margin: 0 0 25px;
+// }
 .input-wrapper {
     display: flex;
     align-items: center;
@@ -87,91 +91,131 @@ input[type=range] {
     display: flex;
     justify-content: space-between;
 }
+.edit-content {
+    display: flex;
+    justify-content: space-between;
+}
+.edit-content > span {
+    font-family: "Roboto-Regular_1";
+    font-size: 12px;
+    color: #BDBDBD;
+    line-height: 22px;
+}
+.edit-delete {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+.edit-img {
+    cursor: pointer;
+    transition: transform .3s;
+}
+.delete-img {
+    cursor: pointer;
+    transition: transform .3s;
+}
+.edit-img:hover, .delete-img:hover, .edit-page-icon:hover {
+    transform: scale(1.1);
+}
+.edit-page-icon {
+    width: 70px;
+    height: 70px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.sort-select {
+    width: 210px;
+    height: 30px;
+}
 /*================== Range - Slider ======================*/
-input[type=range] {
-    -webkit-appearance: none;
-    width: 100%; 
-    background: transparent; 
-  }
+// input[type=range] {
+//     -webkit-appearance: none;
+//     width: 100%; 
+//     background: transparent; 
+//   }
   
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-  }
+//   input[type=range]::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//   }
   
-  input[type=range]:focus {
-    outline: none; 
-  }
+//   input[type=range]:focus {
+//     outline: none; 
+//   }
   
-  input[type=range]::-ms-track {
-    width: 100%;
-    cursor: pointer;
-    background: transparent; 
-    border-color: transparent;
-    color: transparent;
-  }
-  /* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 2px solid #606060;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #589FA5;
-    cursor: pointer;
-    margin-top: -4px;
-  }
+//   input[type=range]::-ms-track {
+//     width: 100%;
+//     cursor: pointer;
+//     background: transparent; 
+//     border-color: transparent;
+//     color: transparent;
+//   }
+//   /* Special styling for WebKit/Blink */
+// input[type=range]::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//     border: 2px solid #606060;
+//     height: 10px;
+//     width: 10px;
+//     border-radius: 50%;
+//     background: #589FA5;
+//     cursor: pointer;
+//     margin-top: -4px;
+//   }
   
-  /* All the same stuff for Firefox */
-  input[type=range]::-moz-range-thumb {
-    border: 2px solid #606060;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #589FA5;
-    cursor: pointer;
-  }
+//   /* All the same stuff for Firefox */
+//   input[type=range]::-moz-range-thumb {
+//     border: 2px solid #606060;
+//     height: 10px;
+//     width: 10px;
+//     border-radius: 50%;
+//     background: #589FA5;
+//     cursor: pointer;
+//   }
   
-  /* All the same stuff for IE */
-  input[type=range]::-ms-thumb {
-    border: 2px solid #606060;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #589FA5;
-    cursor: pointer;
-  }
+//   /* All the same stuff for IE */
+//   input[type=range]::-ms-thumb {
+//     border: 2px solid #606060;
+//     height: 10px;
+//     width: 10px;
+//     border-radius: 50%;
+//     background: #589FA5;
+//     cursor: pointer;
+//   }
 
 
-  input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: #606060;
-  }
+//   input[type=range]::-webkit-slider-runnable-track {
+//     width: 100%;
+//     height: 2px;
+//     cursor: pointer;
+//     background: #606060;
+//   }
   
-  input[type=range]:focus::-webkit-slider-runnable-track {
-    // background: rgba(198, 220, 239, 0.78);
-  }
+//   input[type=range]:focus::-webkit-slider-runnable-track {
+//     // background: rgba(198, 220, 239, 0.78);
+//   }
   
-  input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: #606060;
-  }
+//   input[type=range]::-moz-range-track {
+//     width: 100%;
+//     height: 2px;
+//     cursor: pointer;
+//     background: #606060;
+//   }
   
-  input[type=range]::-ms-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    // border-width: 16px 0;
-    color: transparent;
-  }
-  /* ========================= Range Control ===============*/
+//   input[type=range]::-ms-track {
+//     width: 100%;
+//     height: 2px;
+//     cursor: pointer;
+//     background: transparent;
+//     border-color: transparent;
+//     // border-width: 16px 0;
+//     color: transparent;
+//   }
+//   /* ========================= Range Control ===============*/
   .range-value-wrapper {
-      width: 100%;
+      width: 207px;
       height: 20px;
       margin-bottom: -10px;
       display: flex;
@@ -182,3 +226,9 @@ input[type=range]::-webkit-slider-thumb {
       font-size: 14px;
       font-weight: bold;
   }
+
+
+/*==================== UI Range Slider =======================*/
+#slider-range {
+    width: 200px;
+}

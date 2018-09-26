@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How-to | Articles</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="mainHeader">
+      <div class="myContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="quest.html" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox">
+                  <img src="img/close.png" alt="how to close image" class="closeImg hiddenCloseImg" id="closeHiddenSerchBox">
+              </div> <!--searchBox-->
+
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
+
+      <form class="hiddensearchBox hiddenForm" id="hiddenSearcBox">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+
+
+    <div class="fixed-header" id="fixed-header">
+      <div class="miniContainer flexBox">
+          <a href="index.html" class="brandName">howto</a>
+          <nav class="headerNav">
+              <ul class="headerNav-ul flexBox">
+                  <li><a href="about.html" class="headerNav-a">პროექტის შესახებ</a></li>
+                  <li><a href="#" class="headerNav-a">მოთხოვნები</a></li>
+                  <li><a href="#" class="headerNav-a">explore</a></li>
+              </ul>
+          </nav>
+          <div class="searchProfile flexBox">
+
+              <div class="searchBox">
+                  <img src="img/search.png" alt="how to search image" id="openHiddenSerchBox_fixed">
+                  <img src="img/close.png"
+                       alt="how to close image"
+                       class="closeImg hiddenCloseImg_fixed"
+                       id="closeHiddenSerchBox_fixed">
+              </div> <!--searchBox-->
+
+              <div class="loginBox">
+                  <p>შესვლა</p>
+              </div> <!--loginBox-->
+          </div> <!--searchProfile-->
+      </div> <!--container-->
+
+      <form class="hiddensearchBox_fixed hiddenForm_fixed" id="hiddenSearcBox_fixed">
+
+          <input type="text" name="">
+
+          <button id="hiddenBtn_fixed" title="Search">
+              <img src="img/search.png">
+          </button>
+
+      </form> <!--hiddensearchBox-->
+    </div> <!--fixedHeader-->
+  </header>
+
+    <section class="article-hero">
+        <img src="http://via.placeholder.com/1280x685" class="hero-img">
+        <h1>განცხადებები</h1>
+    </section> <!--article-hero-->
+
+    <section class="container search-resoult">
+        <div class="row">
+            <div class="col-md-3"></div> <!--col-md-3-->
+            <div class="col-md-9"><p class="resoult">ნაპოვნი იქნა<span class="number"> 4 </span>სტატია</p></div>
+        </div>
+    </section> <!--search-resoult-->
+
+    <section class="article-content container">
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-md-3">
+                <div class="category-wrapper">
+                    <div class="category-title">რეიტინგის მიხედვით</div>
+                    <div class="range-value-wrapper">
+                        <span id="value-0">0</span>
+                        <span id="value-1"></span>
+                        <span id="value-2"></span>
+                        <span id="value-3"></span>
+                        <span id="value-4"></span>
+                        <span id="value-5">5</span>
+                    </div>                   
+                   
+                        
+                    <p>
+                        <input type="text" 
+                            id="amount" 
+                            readonly 
+                            style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                           
+                    <div id="slider-range"></div>
+
+                    <div class="category-title">სორტირება</div>
+                    <select class="sort-select">
+                        <option >რენდომად</option>
+                        <option >ბოლოს დამატებული</option>
+                        <option >რეიტინგის მიხედვით</option>
+                    </select>
+                    <!-- <div class="input-wrapper">
+                        <label>პოპულარული საიტები<input type="radio" name="articles"></label>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>ბოლოს დამატებული საიტები<input type="radio" name="articles"></label>
+                    </div> -->
+                    <div class="category-title">ყველა კატეგორია</div>
+                    <div class="input-wrapper">
+                        <label><input type="radio" name="articles">ხელოვნება</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <label><input type="radio" name="articles">მუსიკა</label>
+                    </div>
+                    <div class="input-wrapper">
+                            <label><input type="radio" name="articles">დეკორაციები</label>
+                    </div>
+                </div> <!--category-wrapper-->
+            </div> <!--col-md-3-->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <section class="categoryBox">
+
+                            <div class="ImgWrapper">
+                                <img src="img/Artboard 1-100.jpg" class="categoryBoxImg">
+                                <div class="overlay"></div>
+                                <div class="userActions">
+
+                                    <section class='rating-widget'>
+
+                                        <!-- Rating Stars Box -->
+                                        <div class='rating-stars'>
+                                        <ul id='stars'>
+                                            <li class='star' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                        </ul>
+                                        </div>
+
+                                        <!-- <div class='success-box'>
+                                        <div class='clearfix'></div>
+                                        <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
+                                        <div class='text-message'></div>
+                                        <div class='clearfix'></div>
+                                        </div> -->
+                                    </section>
+
+                                    <div class="heart">
+                                        <svg viewBox="0 0 24 24" class='heartSVG'>
+                                            <g id="favorite">
+                                                <path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+
+
+                                </div> <!--userActions-->
+                            </div> <!--ImgWrapper-->
+
+                            <div class="catInfoWrapper">
+                                <p class="catName">Category Name</p> <!--catName-->
+                                <p class="catDate">June 25, 2018</p> <!--catDate-->
+                            </div> <!--catInfoWrapper-->
+
+                            <article class="articleWrapper">
+                                <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
+                                    შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
+                                    შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
+                                    სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
+                                <div class="edit-content">
+                                    <span>By Author</span>  
+                                    <div class="edit-delete">
+                                        <img src="img/edit.png" class="edit-img">
+                                        <img src="img/delete.png" class="delete-img">
+                                    </div>
+                                </div>
+                            </article> <!--articlWrapper-->
+                        </section> <!--categoryBox-->
+                    </div>
+                    <div class="col-md-6">
+                            <section class="categoryBox">
+
+                                    <div class="ImgWrapper">
+                                        <img src="img/Artboard 1-100.jpg" class="categoryBoxImg">
+                                        <div class="overlay"></div>
+                                        <div class="userActions">
+        
+                                            <section class='rating-widget'>
+        
+                                                <!-- Rating Stars Box -->
+                                                <div class='rating-stars'>
+                                                <ul id='stars'>
+                                                    <li class='star' title='Poor' data-value='1'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Fair' data-value='2'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Good' data-value='3'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Excellent' data-value='4'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='WOW!!!' data-value='5'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                </ul>
+                                                </div>
+        
+                                                <!-- <div class='success-box'>
+                                                <div class='clearfix'></div>
+                                                <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
+                                                <div class='text-message'></div>
+                                                <div class='clearfix'></div>
+                                                </div> -->
+                                            </section>
+        
+                                            <div class="heart">
+                                                <svg viewBox="0 0 24 24" class='heartSVG'>
+                                                    <g id="favorite">
+                                                        <path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+        
+        
+                                        </div> <!--userActions-->
+                                    </div> <!--ImgWrapper-->
+        
+                                    <div class="catInfoWrapper">
+                                        <p class="catName">Category Name</p> <!--catName-->
+                                        <p class="catDate">June 25, 2018</p> <!--catDate-->
+                                    </div> <!--catInfoWrapper-->
+        
+                                    <article class="articleWrapper">
+                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                        <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
+                                            შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
+                                            შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
+                                            სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
+                                        <div class="edit-content">
+                                            <span>By Author</span>  
+                                            <div class="edit-delete">
+                                                <img src="img/edit.png" class="edit-img">
+                                                <img src="img/delete.png" class="delete-img">
+                                            </div>
+                                        </div>
+                                    </article> <!--articlWrapper-->
+                                </section> <!--categoryBox-->
+                    </div>
+                    <div class="col-md-6">
+                            <section class="categoryBox">
+
+                                    <div class="ImgWrapper">
+                                        <img src="img/Artboard 1-100.jpg" class="categoryBoxImg">
+                                        <div class="overlay"></div>
+                                        <div class="userActions">
+        
+                                            <section class='rating-widget'>
+        
+                                                <!-- Rating Stars Box -->
+                                                <div class='rating-stars'>
+                                                <ul id='stars'>
+                                                    <li class='star' title='Poor' data-value='1'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Fair' data-value='2'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Good' data-value='3'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Excellent' data-value='4'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='WOW!!!' data-value='5'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                </ul>
+                                                </div>
+        
+                                                <!-- <div class='success-box'>
+                                                <div class='clearfix'></div>
+                                                <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
+                                                <div class='text-message'></div>
+                                                <div class='clearfix'></div>
+                                                </div> -->
+                                            </section>
+        
+                                            <div class="heart">
+                                                <svg viewBox="0 0 24 24" class='heartSVG'>
+                                                    <g id="favorite">
+                                                        <path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+        
+        
+                                        </div> <!--userActions-->
+                                    </div> <!--ImgWrapper-->
+        
+                                    <div class="catInfoWrapper">
+                                        <p class="catName">Category Name</p> <!--catName-->
+                                        <p class="catDate">June 25, 2018</p> <!--catDate-->
+                                    </div> <!--catInfoWrapper-->
+        
+                                    <article class="articleWrapper">
+                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                        <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
+                                            შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
+                                            შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
+                                            სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
+                                        <div class="edit-content">
+                                            <span>By Author</span>  
+                                            <div class="edit-delete">
+                                                <img src="img/edit.png" class="edit-img">
+                                                <img src="img/delete.png" class="delete-img">
+                                            </div>
+                                        </div>
+                                    </article> <!--articlWrapper-->
+                                </section> <!--categoryBox-->
+                    </div>
+                    <div class="col-md-6">
+                            <section class="categoryBox">
+
+                                    <div class="ImgWrapper">
+                                        <img src="img/Artboard 1-100.jpg" class="categoryBoxImg">
+                                        <div class="overlay"></div>
+                                        <div class="userActions">
+        
+                                            <section class='rating-widget'>
+        
+                                                <!-- Rating Stars Box -->
+                                                <div class='rating-stars'>
+                                                <ul id='stars'>
+                                                    <li class='star' title='Poor' data-value='1'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Fair' data-value='2'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Good' data-value='3'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='Excellent' data-value='4'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                    <li class='star' title='WOW!!!' data-value='5'>
+                                                    <i class='fa fa-star fa-fw'></i>
+                                                    </li>
+                                                </ul>
+                                                </div>
+        
+                                                <!-- <div class='success-box'>
+                                                <div class='clearfix'></div>
+                                                <img alt='tick image' width='32' src='https://i.imgur.com/3C3apOp.png'/>
+                                                <div class='text-message'></div>
+                                                <div class='clearfix'></div>
+                                                </div> -->
+                                            </section>
+        
+                                            <div class="heart">
+                                                <svg viewBox="0 0 24 24" class='heartSVG'>
+                                                    <g id="favorite">
+                                                        <path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+        
+        
+                                        </div> <!--userActions-->
+                                    </div> <!--ImgWrapper-->
+        
+                                    <div class="catInfoWrapper">
+                                        <p class="catName">Category Name</p> <!--catName-->
+                                        <p class="catDate">June 25, 2018</p> <!--catDate-->
+                                    </div> <!--catInfoWrapper-->
+        
+                                    <article class="articleWrapper">
+                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                        <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
+                                            შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
+                                            შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
+                                            სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე</p> <!--articleText-->
+                                        <div class="edit-content">
+                                            <span>By Author</span>  
+                                            <div class="edit-delete">
+                                                <img src="img/edit.png" class="edit-img">
+                                                <img src="img/delete.png" class="delete-img">
+                                            </div>
+                                        </div>
+                                    </article> <!--articlWrapper-->
+                                </section> <!--categoryBox-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/edit-page.png" class="edit-page-icon">
+    </section> <!--article-content-->
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 flex-end">
+                    <div class="icon-wrapper">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div> <!--row-->
+        </div> <!--container-->
+    </footer>
+
+
+<script src="js/jQ.3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    
+  $( function() {
+      var firstSpan = document.querySelectorAll("#slider-range > div > span.ui-slider-handle");
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 5,
+      values: [ 0, 5 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.values[ 0 ] + " " + ui.values[ 1 ] );
+
+        // $( "#value-1" ).html( ui.values[ 0 ] );
+        // $( "#value-2" ).html( ui.values[ 0 ] + 1 );
+        // $( "#value-3" ).html( ui.values[ 0 ] + 2 );
+        // $( "#value-4" ).html( ui.values[ 0 ] + 3 );
+        if( $( "#amount" ).val( ui.values[ 0 ]) == 1 && ui.values[ 1 ] >= 1 ) {
+          
+            $( "#value-1" ).html( "1" );
+
+        }
+        
+      }
+    });
+
+    
+   
+
+    
+    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+      " " + $( "#slider-range" ).slider( "values", 1 ) );
+
+    
+        
+    
+
+      
+     
+    
+  } );
+
+</script>
+<script src="js/raiting.js"></script>
+<script src="js/heart.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
