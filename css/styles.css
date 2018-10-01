@@ -162,7 +162,7 @@ a.headerNav-a, .loginBox p {
   font-size: 18px;
   color: #292929; }
 
-a.active {
+a.headerNav-a.active {
   color: #CCCCCC; }
 
 .searchProfile {
@@ -347,43 +347,57 @@ html, body {
   width: 50%;
   margin: 40px auto 50px; }
 
+.more-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 80px;
+  height: 26px;
+  margin: 0 auto;
+  border-radius: 10px; }
+
 .more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  text-align: center;
+  padding: 7px 0;
   font-family: "NotoSansGeorgian-Condensed";
   font-size: 12px;
-  width: 60px;
-  height: 26px;
+  width: 80px;
   background: #00B5E1;
   color: #fff;
-  margin: 0 auto;
-  transition: background .3s, color .3s; }
+  transition: background .3s, color .3s;
+  border-radius: 10px; }
+
+.left-shadow {
+  display: block;
+  width: 40px;
+  height: 10px;
+  background: transparent;
+  position: absolute;
+  left: -1px;
+  bottom: 13px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-8deg);
+  z-index: -11; }
+
+.right-shadow {
+  display: block;
+  width: 40px;
+  height: 10px;
+  background: transparent;
+  position: absolute;
+  right: -1px;
+  bottom: 13px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(8deg);
+  z-index: -11; }
 
 .more:hover {
   background: #fff;
   color: #2C3D4E; }
-
-.jssorTitle-a {
-  position: relative; }
-
-.jssorTitle-a:before, .jssorTitle-a:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 25px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  box-shadow: 0 3px 20px #777;
-  transform: rotate(-8deg); }
-
-.jssorTitle-a:after {
-  transform: rotate(8deg);
-  right: 10px;
-  left: auto; }
 
 /*jssor slider bullet skin 064 css*/
 .jssorb064 {
@@ -522,7 +536,7 @@ span.owl-play {
   background: #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin: 0 auto 35px;
-  padding: 12px 8px 18px; }
+  padding: 8px 8px 18px; }
 
 .ImgWrapper {
   position: relative;
@@ -719,9 +733,6 @@ a.enter-facebook > i.fab.fa-facebook-f {
 /* ============================
     About Project
 ============================= */
-.youtubeChannel {
-  margin-top: 95px; }
-
 .youtubeChannel > h1 {
   font-family: 'NotoSerifGeorgian';
   text-align: center;
@@ -1101,5 +1112,3 @@ span[id*=value-] {
   color: #727272;
   width: 57px;
   text-align: center; }
-
-/*# sourceMappingURL=styles.css.map */
