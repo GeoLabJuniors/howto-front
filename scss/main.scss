@@ -681,6 +681,16 @@ a.enter-facebook > i.fab.fa-facebook-f {
     width: 142px;
     letter-spacing: 1px;
 }
+.my-profile-wrapper {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: lightgray;
+}
+.my-profile-img {
+    display: block;
+}
 
 @import 'about';
 @import 'articles';
