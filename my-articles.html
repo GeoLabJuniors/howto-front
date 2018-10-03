@@ -103,6 +103,7 @@
     <section class="article-content container">
         <div class="row" style="padding-top: 10px;">
             <div class="col-md-3">
+
                 <div class="category-wrapper">
                     <div class="category-title">რეიტინგის მიხედვით</div>
                     <div class="range-value-wrapper">
@@ -147,10 +148,14 @@
                             <label><input type="radio" name="articles">დეკორაციები</label>
                     </div>
                 </div> <!--category-wrapper-->
+
             </div> <!--col-md-3-->
+
+
             <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row" id="parent-content">
+                    
+                    <div class="col-md-6 child-content">
                         <section class="categoryBox">
 
                             <div class="ImgWrapper">
@@ -207,7 +212,7 @@
                             </div> <!--catInfoWrapper-->
 
                             <article class="articleWrapper">
-                                <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                <a class="articleTitle" href="article.html">ლორემ იფსუმ 1</a> <!--articleTitle-->
                                 <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                     შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                     შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
@@ -224,8 +229,9 @@
                             </article> <!--articlWrapper-->
                         </section> <!--categoryBox-->
                     </div>
-                    <div class="col-md-6">
-                            <section class="categoryBox">
+
+                    <div class="col-md-6 child-content">
+                        <section class="categoryBox">
 
                                     <div class="ImgWrapper">
                                         <img src="img/Artboard 1-100.jpg" class="categoryBoxImg">
@@ -281,7 +287,7 @@
                                     </div> <!--catInfoWrapper-->
         
                                     <article class="articleWrapper">
-                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ 2</a> <!--articleTitle-->
                                         <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                             შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                             შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
@@ -296,10 +302,11 @@
                                             </div>
                                         </div>
                                     </article> <!--articlWrapper-->
-                                </section> <!--categoryBox-->
+                        </section> <!--categoryBox-->
                     </div>
-                    <div class="col-md-6">
-                            <section class="categoryBox">
+
+                    <div class="col-md-6 child-content">
+                        <section class="categoryBox">
 
                                     <div class="ImgWrapper">
                                         <img src="img/Artboard 1-100.jpg" class="categoryBoxImg">
@@ -355,7 +362,7 @@
                                     </div> <!--catInfoWrapper-->
         
                                     <article class="articleWrapper">
-                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ 3</a> <!--articleTitle-->
                                         <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                             შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                             შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
@@ -370,10 +377,11 @@
                                             </div>
                                         </div>
                                     </article> <!--articlWrapper-->
-                                </section> <!--categoryBox-->
+                        </section> <!--categoryBox-->
                     </div>
-                    <div class="col-md-6">
-                            <section class="categoryBox">
+
+                    <div class="col-md-6 child-content">
+                        <section class="categoryBox">
 
                                     <div class="ImgWrapper">
                                         <img src="img/Artboard 1-100.jpg" class="categoryBoxImg">
@@ -429,7 +437,7 @@
                                     </div> <!--catInfoWrapper-->
         
                                     <article class="articleWrapper">
-                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ</a> <!--articleTitle-->
+                                        <a class="articleTitle" href="article.html">ლორემ იფსუმ 4</a> <!--articleTitle-->
                                         <p class="articleText">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს
                                             შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი
                                             შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად
@@ -444,12 +452,15 @@
                                             </div>
                                         </div>
                                     </article> <!--articlWrapper-->
-                                </section> <!--categoryBox-->
+                        </section> <!--categoryBox-->
                     </div>
-                </div>
-            </div>
-        </div>
+
+                </div> <!--row-->
+            </div> <!--col-md-9-->
+        </div> <!--row-->
+
         <img src="img/edit-page.png" class="edit-page-icon">
+
     </section> <!--article-content-->
 
 
@@ -498,28 +509,20 @@
         }
         
       }
-    });
+});
 
-    
-   
-
-    
-    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
-      " " + $( "#slider-range" ).slider( "values", 1 ) );
-
-    
-        
-    
-
-      
-     
-    
-  } );
+$( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+" " + $( "#slider-range" ).slider( "values", 1 ) );
+});
 
 </script>
 <script src="js/raiting.js"></script>
 <script src="js/heart.js"></script>
 <script src="js/scripts.js"></script>
-
+<script>
+    // Scripts to delete article box
+    // var childContent = document.getElementsByClassName('child-content');
+    // var deleteChildBtn = document.getElementsByClassName('delete-img');
+</script>
 </body>
 </html>
