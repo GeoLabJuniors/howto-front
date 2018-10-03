@@ -120,15 +120,18 @@ window.onscroll = function() {
   }
 
 };
+
+
+
 // Show Login Modal 
 var showBtn = document.getElementById('logIn');
 var loginModal = document.getElementById('loginModal');
 var mainBody = document.getElementsByTagName('body')[0];
 
-showBtn.addEventListener('click', function() {
+showBtn.onclick = function() {
     loginModal.classList = 'login-wrap show-login-modal';
     mainBody.style.overflow = 'hidden';
-});
+};
 
 // Close Login Modal
 
@@ -146,3 +149,4 @@ showFixedLogin.addEventListener('click', function() {
     loginModal.classList = 'login-wrap show-login-modal';
     mainBody.style.overflow = 'hidden';
 });
+
