@@ -834,24 +834,31 @@ p.about-content-p {
   font-family: "NotoSerifGeorgian";
   font-size: 14px;
   padding: 5px 0;
-  margin: 10px 0; }
+  margin: 30px 0 20px; }
+
+.category-title:first-child {
+  margin-top: 5px; }
 
 .input-wrapper {
   display: flex;
   align-items: center;
   margin: 20px 0;
-  height: 10px; }
+  height: 10px;
+  margin-left: 0; }
 
 .input-wrapper > label {
   font-family: "NotoSerifGeorgian";
   font-size: 10px;
   color: #606060;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: .5px;
+  cursor: pointer; }
 
-.input-wrapper > label > input[type=radio] {
+.input-wrapper > input[type=radio] {
   width: 10px;
   height: 10px;
-  margin-left: 7px; }
+  margin: 0 10px 0 0;
+  cursor: pointer; }
 
 .flex-end {
   display: flex;
@@ -918,25 +925,35 @@ p.about-content-p {
   transition: transform .3s; }
 
 .sort-select {
+  color: #484949;
   width: 210px;
-  height: 30px; }
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #484949;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../img/arrow-down.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: right center; }
 
-/*================== Range - Slider ======================*/
 .range-value-wrapper {
   width: 207px;
   height: 20px;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between; }
 
 span[id*=value-] {
   color: #484949;
-  font-size: 14px;
-  font-weight: bold; }
+  font-size: 14px; }
 
 /*==================== UI Range Slider =======================*/
 #slider-range {
-  width: 200px; }
+  width: 200px;
+  margin-bottom: 20px; }
 
 /* ============================
    Full Article Page

@@ -45,7 +45,10 @@
     font-family: $notoSerifGeorgian;
     font-size: 14px;
     padding: 5px 0;
-    margin: 10px 0;
+    margin: 30px 0 20px;
+}
+.category-title:first-child {
+    margin-top: 5px;
 }
 
 // input[type=range] {
@@ -56,17 +59,21 @@
     align-items: center;
     margin: 20px 0;
     height: 10px;
+    margin-left: 0;
 }
 .input-wrapper > label {
     font-family: $notoSerifGeorgian;
     font-size: 10px;
     color: #606060;
     font-weight: bold;
+    letter-spacing: .5px;
+    cursor: pointer;
 }
-.input-wrapper > label > input[type=radio] {
+.input-wrapper > input[type=radio] {
     width: 10px;
     height: 10px;
-    margin-left: 7px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
 }
 .flex-end {
     display: flex;
@@ -133,107 +140,37 @@
     transition: transform .3s;
 }
 .sort-select {
+    color: #484949;
     width: 210px;
     height: 30px;
+    border: none;
+    border-bottom: 2px solid #484949;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url(../img/arrow-down.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
-/*================== Range - Slider ======================*/
-// input[type=range] {
-//     -webkit-appearance: none;
-//     width: 100%; 
-//     background: transparent; 
-//   }
-  
-//   input[type=range]::-webkit-slider-thumb {
-//     -webkit-appearance: none;
-//   }
-  
-//   input[type=range]:focus {
-//     outline: none; 
-//   }
-  
-//   input[type=range]::-ms-track {
-//     width: 100%;
-//     cursor: pointer;
-//     background: transparent; 
-//     border-color: transparent;
-//     color: transparent;
-//   }
-//   /* Special styling for WebKit/Blink */
-// input[type=range]::-webkit-slider-thumb {
-//     -webkit-appearance: none;
-//     border: 2px solid #606060;
-//     height: 10px;
-//     width: 10px;
-//     border-radius: 50%;
-//     background: #589FA5;
-//     cursor: pointer;
-//     margin-top: -4px;
-//   }
-  
-//   /* All the same stuff for Firefox */
-//   input[type=range]::-moz-range-thumb {
-//     border: 2px solid #606060;
-//     height: 10px;
-//     width: 10px;
-//     border-radius: 50%;
-//     background: #589FA5;
-//     cursor: pointer;
-//   }
-  
-//   /* All the same stuff for IE */
-//   input[type=range]::-ms-thumb {
-//     border: 2px solid #606060;
-//     height: 10px;
-//     width: 10px;
-//     border-radius: 50%;
-//     background: #589FA5;
-//     cursor: pointer;
-//   }
-
-
-//   input[type=range]::-webkit-slider-runnable-track {
-//     width: 100%;
-//     height: 2px;
-//     cursor: pointer;
-//     background: #606060;
-//   }
-  
-//   input[type=range]:focus::-webkit-slider-runnable-track {
-//     // background: rgba(198, 220, 239, 0.78);
-//   }
-  
-//   input[type=range]::-moz-range-track {
-//     width: 100%;
-//     height: 2px;
-//     cursor: pointer;
-//     background: #606060;
-//   }
-  
-//   input[type=range]::-ms-track {
-//     width: 100%;
-//     height: 2px;
-//     cursor: pointer;
-//     background: transparent;
-//     border-color: transparent;
-//     // border-width: 16px 0;
-//     color: transparent;
-//   }
 //   /* ========================= Range Control ===============*/
   .range-value-wrapper {
       width: 207px;
       height: 20px;
-      margin-bottom: -10px;
+      margin-bottom: 0px;
+      margin-top: 20px;
       display: flex;
       justify-content: space-between;
   }
   span[id*=value-] {
       color: #484949;
       font-size: 14px;
-      font-weight: bold;
   }
 
 
 /*==================== UI Range Slider =======================*/
 #slider-range {
     width: 200px;
+    margin-bottom: 20px;
 }

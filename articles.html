@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-        <header class="mainHeader">
+    <header class="mainHeader">
                 <div class="myContainer flexBox">
                     <a href="index.html" class="brandName">howto</a>
                     <nav class="headerNav">
@@ -112,21 +112,21 @@
     </section> <!--search-resoult-->
 
     <section class="article-content container">
-        <div class="row">
+        <div class="row" style="padding-top: 10px;">
             <div class="col-md-3">
                 <div class="category-wrapper">
                     <div class="category-title">რეიტინგის მიხედვით</div>
                     <div class="range-value-wrapper">
                         <span id="value-0">0</span>
-                        <span id="value-1"></span>
-                        <span id="value-2"></span>
-                        <span id="value-3"></span>
-                        <span id="value-4"></span>
+                        <span id="value-1">1</span>
+                        <span id="value-2">2</span>
+                        <span id="value-3">3</span>
+                        <span id="value-4">4</span>
                         <span id="value-5">5</span>
                     </div>                   
                    
                         
-                    <p>
+                    <p style="display:none;">
                         <input type="text" 
                             id="amount" 
                             readonly 
@@ -138,7 +138,7 @@
                     <div class="category-title">სორტირება</div>
                     <select class="sort-select">
                         <option >რენდომად</option>
-                        <option >ბოლოს დამატებულიბი</option>
+                        <option >ბოლოს დამატებული</option>
                         <option >რეიტინგის მიხედვით</option>
                     </select>
                     <!-- <div class="input-wrapper">
@@ -148,14 +148,18 @@
                         <label>ბოლოს დამატებული საიტები<input type="radio" name="articles"></label>
                     </div> -->
                     <div class="category-title">ყველა კატეგორია</div>
-                    <div class="input-wrapper">
-                        <label><input type="radio" name="articles">ხელოვნება</label>
+
+                    <div class="input-wrapper">                        
+                        <input type="radio" name="cat" id="articles">
+                        <label for="articles">ხელოვნება</label>
                     </div>
-                    <div class="input-wrapper">
-                        <label><input type="radio" name="articles">მუსიკა</label>
+                    <div class="input-wrapper">                        
+                        <input type="radio" name="cat" id="music">
+                        <label for="music">მუსიკა</label>
                     </div>
-                    <div class="input-wrapper">
-                            <label><input type="radio" name="articles">დეკორაციები</label>
+                    <div class="input-wrapper">                        
+                        <input type="radio" name="cat" id="dec">
+                        <label for="dec">დეკორაციები</label>
                     </div>
                 </div> <!--category-wrapper-->
             </div> <!--col-md-3-->
@@ -452,52 +456,26 @@
 
 
 <script src="js/jQ.3.3.1.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-    
-  $( function() {
-      var firstSpan = document.querySelectorAll("#slider-range > div > span.ui-slider-handle");
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 5,
-      values: [ 0, 5 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( ui.values[ 0 ] + " " + ui.values[ 1 ] );
-
-        // $( "#value-1" ).html( ui.values[ 0 ] );
-        // $( "#value-2" ).html( ui.values[ 0 ] + 1 );
-        // $( "#value-3" ).html( ui.values[ 0 ] + 2 );
-        // $( "#value-4" ).html( ui.values[ 0 ] + 3 );
-        if( $( "#amount" ).val( ui.values[ 0 ]) == 1 && ui.values[ 1 ] >= 1 ) {
-          
-            $( "#value-1" ).html( "1" );
-
-        }
-        
-      }
-    });
-
-    
-   
-
-    
-    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
-      " " + $( "#slider-range" ).slider( "values", 1 ) );
-
-    
-        
-    
-
-      
-     
-    
-  } );
-
-</script>
+<script src="js/dualTumbSlider.js"></script>
 <script src="js/raiting.js"></script>
 <script src="js/heart.js"></script>
 <script src="js/scripts.js"></script>
+<script>
+        $( function() {
+      
+              $( "#slider-range" ).slider({
+                  range: true,
+                  min: 0,
+                  max: 5,
+                  values: [ 0, 5 ],
+                  slide: function( event, ui ) {
+                      $( "#amount" ).val( ui.values[ 0 ] + " " + ui.values[ 1 ] );            
+                  }
+              });       
+          
+              $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + " " + $( "#slider-range" ).slider( "values", 1 ) );      
+} );
+</script>
 
 </body>
 </html>
